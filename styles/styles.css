@@ -1,13 +1,19 @@
 h1{
-    background-color: navy;
+    background-color: rgb(11, 11, 47);
     color: white;
     font-size: 100px;
     text-align: center;
 }
 
 p{
-    line-height: 30px;
-    border: 2px solid blue;
+  padding: 3px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+code{
+  background-color: rgb(182, 182, 182);
 }
 
 img{
@@ -43,14 +49,17 @@ img{
     width: 160px;
     background-color: #555;
     color: #fff;
-    text-align: center;
+    text-align: left;
     border-radius: 6px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -90px;
+    font-size: medium;
+    padding: 10px;
+    line-height: 110%;
   }
 
   /* Popup arrow */
@@ -80,4 +89,5 @@ img{
     float: left;
     margin-left: 100px;
     padding: 3px;
+    margin-bottom: 100px;
 }

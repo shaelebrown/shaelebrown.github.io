@@ -14,20 +14,37 @@
     </div>
 
     <div>
-        <p>Here's a little about me. For instance, here's my <a href="https://github.com/shaelebrown">GitHub page</a>.</p>
+        <p>Hi there! My name is Shael, I'm a mathematical problem solver, software developper, deep learning enthusiast and topological data analysis expert. 
+            My goal is to drive value by improving deep learning models using advanced mathematics, and currently I'm open to work (my email is shaelebrown AT gmail.com).
+            If you want to learn more about me you can follow the flow of the neural network below, clicking on a node to learn more (and it clicking it again to close the window). 
+            This network was trained with the SHAEL optimizer, with a high learning rate, in batches and without dropout ;)
+        </p>
+    </div>
+
+    <div>
+        <code>Inputs</code>
+        <code>Layer 1: background</code>
+        <code>Layer 2: experience</code>
+        <code>Layer 3: end products</code>
+        <code>Layer 4: skills</code>
+        <code>Outputs: goal</code>
+        <br>
+        <br>
     </div>
 
     <div class="layer">
 
-        <div class="circle popup" onclick="myFunction()" id="input1">
-            Input 1
-            <span class="popuptext" id="input1pop">Here's the description of this one</span>
+        <div class="circle popup" onclick="PhD()" id="PhD">
+            PhD
+            <span class="popuptext" id="PhDpop">I started my PhD in Quantitative Life Sciences at McGill in 2019.
+                As a part of the <a href="http://www.farivarlab.com/">Farivar lab</a> I used tools from topological data analysis to
+            improve methods for analyzing neural representations of stimuli.</span>
         </div>
     
         <script>
             // When the user clicks on div, open the popup
-            function myFunction() {
-              var popup = document.getElementById("input1pop");
+            function PhD() {
+              var popup = document.getElementById("PhDpop");
               popup.classList.toggle("show");
             }
         </script>
@@ -36,15 +53,32 @@
         <br>
         <br>
 
-        <div class="circle popup" onclick="myFunction2()" id="input2">
-            Input 2
-            <span class="popuptext" id="input2pop">Here's the description of this other one</span>
+        <div class="circle popup" onclick="MSc()" id="MSc">
+            MSc
+            <span class="popuptext" id="MScpop">I completed my MSc in mathematics at McGill University between 2017-19 in the field of mathematical logic. My <a href="https://escholarship.mcgill.ca/concern/theses/q524jr06s">thesis</a> showed that a certain reasoning system can always decide whether any statement is true or false.</span>
         </div>
 
         <script>
             // When the user clicks on div, open the popup
-            function myFunction2() {
-            var popup = document.getElementById("input2pop");
+            function MSc() {
+            var popup = document.getElementById("MScpop");
+            popup.classList.toggle("show");
+            }
+        </script>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="circle popup" onclick="BSc()" id="BSc">
+            BSc
+            <span class="popuptext" id="BScpop">I completed my BSc with a joint honors in mathematics and computer science and a minor in French at Dalhousie University between 2013-17. In my final year I won the university medal for mathematics.</span>
+        </div>
+
+        <script>
+            // When the user clicks on div, open the popup
+            function BSc() {
+            var popup = document.getElementById("BScpop");
             popup.classList.toggle("show");
             }
         </script>
@@ -53,15 +87,49 @@
 
     <div class="layer">
 
-        <div class="circle popup" onclick="myFunction3()" id="input3">
-            Input 3
-            <span class="popuptext" id="input3pop">Here's the description of this one</span>
+        <div class="circle popup" onclick="Software()" id="Software">
+            Software
+            <span class="popuptext" id="Softwarepop">As a part of my PhD I developed an R package called <a href="https://cran.r-project.org/web/packages/TDApplied/index.html">TDApplied</a> for analyzing persistence diagrams with machine learning and inference.</span>
         </div>
     
         <script>
             // When the user clicks on div, open the popup
-            function myFunction3() {
-              var popup = document.getElementById("input3pop");
+            function Software() {
+              var popup = document.getElementById("Softwarepop");
+              popup.classList.toggle("show");
+            }
+        </script>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="circle popup" onclick="Workshops()" id="Workshops">
+            Workshops
+            <span class="popuptext" id="Workshopspop">I have ran two workshops on using my software package, at <a href="https://wocomtoqc.github.io">WoComToQC 2023</a> and at <a href="https://www.ihcisociety.org/ihci-2023">IHCI 2023</a></span>
+        </div>
+    
+        <script>
+            // When the user clicks on div, open the popup
+            function Workshops() {
+              var popup = document.getElementById("Workshopspop");
+              popup.classList.toggle("show");
+            }
+        </script>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="circle popup" onclick="Papers()" id="Papers">
+            Papers
+            <span class="popuptext" id="Paperspop">I currently have two papers in preparation - a neuroscience paper which applies topological data analysis to improve the analysis of neural representations, and a software paper for an R package I wrote for topological data analysis. I have also contributed to this <a href="https://escholarship.mcgill.ca/concern/theses/cv43p316w">thesis</a> using graph theory to analyze brain networks.</span>
+        </div>
+    
+        <script>
+            // When the user clicks on div, open the popup
+            function Papers() {
+              var popup = document.getElementById("Paperspop");
               popup.classList.toggle("show");
             }
         </script>
@@ -85,7 +153,7 @@
 
     </div>
 
-    <svg width="300" height="100">
+    <!-- <svg width="300" height="100">
 
         <defs>
           <marker id="arrow" markerWidth="13" markerHeight="13" refx="2" refy="6" orient="auto">
@@ -93,7 +161,7 @@
           </marker>
         </defs>
         
-        <!-- const leftobj = document.getElementById("input1");
+        const leftobj = document.getElementById("input1");
         const rightobj = document.getElementById("input3");
         const leftcoords = leftobj.getBoundingClientRect();
         const rightcords = rightobj.getBoundingClientRect();
@@ -106,14 +174,14 @@
         <path d=linepath
               style="stroke:black; stroke-width: 1.25px; fill: none;
               marker-end: url(#arrow);"
-        /> -->
+        />
 
         <path d="M30,150 L100,50"
           style="stroke:red; stroke-width: 1.25px; fill: none;
                  marker-end: url(#arrow);"
         />
             
-        </svg>
+        </svg> -->
 
 </body>
 </html>
