@@ -17,19 +17,25 @@
         <p>Hi there! My name is Shael, I'm a mathematical problem solver, software developper, deep learning enthusiast and topological data analysis expert. 
             My goal is to drive value by improving deep learning models using advanced mathematics, and currently I'm open to work (my email is shaelebrown AT gmail.com).
             If you want to learn more about me you can follow the flow of the neural network below, clicking on a node to learn more (and it clicking it again to close the window). 
-            This network was trained with the SHAEL optimizer, with a high learning rate, in batches and without dropout ;)
+            This network was trained with the SHAEL optimizer, with a high learning rate, in batches and with L2 regulaization for improved inference ;)
         </p>
     </div>
 
     <div>
-        <code>Inputs</code>
-        <code>Layer 1: background</code>
-        <code>Layer 2: experience</code>
-        <code>Layer 3: end products</code>
-        <code>Layer 4: skills</code>
-        <code>Outputs: goal</code>
+        <code class="inputspan">Inputs</code>
+        <code class="backgroundspan">Layer 1: background</code>
+        <code class="expspan">Layer 2: experience</code>
+        <code class="prodspan">Layer 3: end products</code>
+        <code class="skillspan">Layer 4: skills</code>
+        <code class="outputspan">Outputs: goal</code>
+    </div>
+
+    <div class="inputs">
+        <div class="input"><code>Input 1: education</code></div>
         <br>
         <br>
+        <br>
+        <div class="input"><code>Input 2: personal</code></div>
     </div>
 
     <div class="layer background">
@@ -82,10 +88,7 @@
             popup.classList.toggle("show");
             }
         </script>
-
-        <br>
-        <br>
-        <br>
+        
         <br>
         <br>
         <br>
@@ -159,7 +162,7 @@
         <br>
 
         <div class="circle popup" onclick="AL()" id="AL">
-            AL
+            Air liquide
             <span class="popuptext" id="ALpop">In the summer of 2022 I worked as a data scientist intern at <a href="https://www.airliquide.com/group/canada">Air Liquide</a>, using machine learning in python to analyze product demand time series data.</span>
         </div>
 
@@ -210,7 +213,7 @@
         <br>
 
         <div class="circle popup" onclick="LTS()" id="LTS">
-            LTS
+            Let's talk science
             <span class="popuptext" id="LTSpop">In 2020 and 2021 I ran educational programming as a part of <a href="https://letstalkscience.ca">Let's Talk Science</a> for youth across Canada.</span>
         </div>
 
@@ -298,8 +301,8 @@
         <br>
 
         <div class="circle popup" onclick="Neuro()" id="Neuro">
-            Neuroscience toolbox
-            <span class="popuptext" id="Neuropop">The main contribution of my PhD thesis is a tool we call "topological representational similarity analysis", which applies TDA in a novel framework to find previously unseen features of brain function and to use these features to compare brains, species, models, etc.</span>
+            tRSA
+            <span class="popuptext" id="Neuropop">The main contribution of my PhD thesis is a tool we call "topological representational similarity analysis" (tRSA for short), which applies TDA in a novel framework to find previously unseen features of brain function and to use these features to compare brains, species, models, etc.</span>
         </div>
     
         <script>
@@ -315,7 +318,7 @@
         <br>
 
         <div class="circle popup" onclick="Demand()" id="Demand">
-            Improved demand forecasting
+            Demand forecasting
             <span class="popuptext" id="Demandpop">Using feature engineering I was able to improve the accuracy of the companies demand forecasting model by 5%.</span>
         </div>
     
@@ -349,7 +352,7 @@
         <br>
 
         <div class="circle popup" onclick="PR()" id="PR">
-            Soccer performance metric
+            Soccer statistic
             <span class="popuptext" id="PRpop">I implemented a novel metric for assessing soccer player performance using Google's PageRank algorithm, based on some <a href="https://arxiv.org/abs/1704.00583">personal research</a> I carried out.</span>
         </div>
     
@@ -383,7 +386,7 @@
         <br>
 
         <div class="circle popup" onclick="Dexcom()" id="Dexcom">
-            Dexcom predictions
+            Dexcom detection
             <span class="popuptext" id="Dexcompop">Someone dear in my life has Type 1 Diabetes, and uses a <a href="https://www.dexcom.com/en-ca">Dexcom</a> to monitor her blood sugar. The machine alerts her whether her blood sugar is high, low or ugently low, each with its own distinct alert sound. In order to assess the potential use of a phone app which can "listen" and detect dexcom predictions, for added help in diabetes management, I have been fitting deep learning models of a personally curated dexcom alert dataset for trigger detection, and have been interpreting the models with traditional and TDA methods. Check out the current progress at <a href="https://github.com/shaelebrown/dexcom_alert_detection">my GitHub</a>.</span>
         </div>
     
@@ -397,7 +400,7 @@
 
     </div>
 
-    <div class="layer endproducts">
+    <div class="layer skills">
 
         <div class="circle popup" onclick="Dev()" id="Dev">
             Software Dev
@@ -451,7 +454,7 @@
         <br>
 
         <div class="circle popup" onclick="ML()" id="ML">
-            ML
+            Machine learning
             <span class="popuptext" id="MLpop">As a part of my software package I had to implement custom and wrapper machine learning methods for model fitting, cross validation and inference, with sensible default parameter values.</span>
         </div>
     
@@ -519,7 +522,7 @@
         <br>
 
         <div class="circle popup" onclick="DL()" id="DL">
-            DL
+            Deep learning
             <span class="popuptext" id="DLpop">I have fit convolutional and recurrent neural networks, each with varied architectures and parameters, using different regularization techniques like dropout and L2, and with different training settings like weight decay, in my dexcom project. I plan on using transformer architectures in future projects (I have experience using these architectures in my courses).</span>
         </div>
     
@@ -530,14 +533,10 @@
               popup.classList.toggle("show");
             }
         </script>
-    
-        <br>
-        <br>
-        <br>
 
     </div>
 
-    <div class="layer">
+    <div class="layer goal">
 
         <div class="circle popup" onclick="Goal()" id="Goal">
             Goal
