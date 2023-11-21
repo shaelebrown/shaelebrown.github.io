@@ -31,7 +31,7 @@
     </div>
 
     <div class="inputs">
-        <div class="input"><code>Input 1: education</code></div>
+        <div class="input" id="inputspan1"><code>Input 1: education</code></div>
         <br>
         <br>
         <br>
@@ -553,35 +553,34 @@
 
     </div>
 
-    <!-- <svg width="300" height="100">
+    <svg width="300" height="100">
 
         <defs>
-          <marker id="arrow" markerWidth="13" markerHeight="13" refx="2" refy="6" orient="auto">
-              <path d="M2,1 L2,10 L10,6 L2,2"/>
-          </marker>
+            <marker id="arrow" markerWidth="13" markerHeight="13" refx="2" refy="6" orient="auto">
+                <path d="M2,2 L2,11 L10,6 L2,2" style="fill:black;" />
+            </marker>
         </defs>
-        
-        const leftobj = document.getElementById("input1");
-        const rightobj = document.getElementById("input3");
-        const leftcoords = leftobj.getBoundingClientRect();
-        const rightcords = rightobj.getBoundingClientRect();
-        const startx = leftcoords.right;
-        const endx = rightcoords.left;
-        const starty = (leftcoords.top + leftcoords.bottom)/2;
-        const endy = (rightcoords.top + rightcoords.bottom)/2;
-        const linepath = `M${startx},${starty} L${endx},${endy}`;
-
-        <path d=linepath
+    
+        <path d="M30,150 L100,50" id="arr1"
               style="stroke:black; stroke-width: 1.25px; fill: none;
-              marker-end: url(#arrow);"
+                     marker-end: url(#arrow);"
         />
+    
+    </svg>
 
-        <path d="M30,150 L100,50"
-          style="stroke:red; stroke-width: 1.25px; fill: none;
-                 marker-end: url(#arrow);"
-        />
-            
-        </svg> -->
+    <script>
+        var leftobj = document.getElementById("PhD");
+        var rightobj = document.getElementById("Papers");
+        var leftcoords = leftobj.getBoundingClientRect();
+        var rightcoords = rightobj.getBoundingClientRect();
+        var startx = leftcoords.right;
+        var endx = rightcoords.left;
+        var starty = (leftcoords.top + leftcoords.bottom)/2;
+        var endy = (rightcoords.top + rightcoords.bottom)/2;
+        var linepath = `M${startx},${starty} L${endx},${endy}`;
+        var arr = document.getElementById("arr1");
+        arr.setAttribute('d', linepath)
+    </script>
 
 </body>
 </html>
