@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1{
     background-color: rgb(11, 11, 47);
     color: white;
@@ -148,4 +153,14 @@ img{
 
 .skillspan{
   margin-right: 70px;
+}
+
+svg{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+.container {
+  border-width: 0px;
 }

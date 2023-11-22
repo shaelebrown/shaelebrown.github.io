@@ -21,539 +21,9 @@
         </p>
     </div>
 
-    <div>
-        <code class="inputspan">Inputs</code>
-        <code class="backgroundspan">Layer 1: background</code>
-        <code class="expspan">Layer 2: experience</code>
-        <code class="prodspan">Layer 3: end products</code>
-        <code class="skillspan">Layer 4: skills</code>
-        <code class="outputspan">Outputs: goal</code>
-    </div>
+    <div id="container">
 
-    <div class="inputs">
-        <div class="input" id="inputspan1"><code>Input 1: education</code></div>
-        <br>
-        <br>
-        <br>
-        <div class="input"><code>Input 2: personal</code></div>
-    </div>
-
-    <div class="layer background">
-
-        <div class="circle popup" onclick="PhD()" id="PhD">
-            PhD
-            <span class="popuptext" id="PhDpop">I started my PhD in Quantitative Life Sciences at McGill in 2019.
-                As a part of the <a href="http://www.farivarlab.com/">Farivar lab</a> I used tools from topological data analysis to
-            improve methods for analyzing neural representations of stimuli.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function PhD() {
-              var popup = document.getElementById("PhDpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="MSc()" id="MSc">
-            MSc
-            <span class="popuptext" id="MScpop">I completed my MSc in mathematics at McGill University between 2017-19 in the field of mathematical logic. My <a href="https://escholarship.mcgill.ca/concern/theses/q524jr06s">thesis</a> showed that a certain reasoning system can always decide whether any statement is true or false.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function MSc() {
-            var popup = document.getElementById("MScpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="BSc()" id="BSc">
-            BSc
-            <span class="popuptext" id="BScpop">I completed my BSc with a joint honors in mathematics and computer science and a minor in French at Dalhousie University between 2013-17. In my final year I won the university medal for mathematics.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function BSc() {
-            var popup = document.getElementById("BScpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-        
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Volunteering()" id="Volunteering">
-            Volunteering
-            <span class="popuptext" id="Volunteeringpop">I have been giving back to my community ever since my early teenage years. For example, I co-ran <a href="https://dalgazette.com/news/holocaust-education-week-begins-on-sunday/">holocaust education week</a> 2014 in Halifax. I also organized two collection drives for <a href="https://phoenixyouth.ca">Phoenix Youth</a>, providing clothing and holiday presents to at risk youth in Halifax. Most of my volunteering, however, has focused on tutoring, which you can read about in later nodes.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function Volunteering() {
-            var popup = document.getElementById("Volunteeringpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Hobbies()" id="Hobbies">
-            Hobbies
-            <span class="popuptext" id="Hobbiespop">In my free time I enjoy learning languages (French, Arabic, Hebrew and Spanish), playing soccer, running and learning about interesting math and its applications in real life/data science.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function Hobbies() {
-            var popup = document.getElementById("Hobbiespop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-    </div>
-
-    <div class="layer experience">
-
-        <div class="circle popup" onclick="Papers()" id="Papers">
-            Papers
-            <span class="popuptext" id="Paperspop">I currently have two papers in preparation - a neuroscience paper which applies topological data analysis (TDA) to improve the analysis of neural representations, and a software paper for an R package I wrote for topological data analysis. I have also contributed to this <a href="https://escholarship.mcgill.ca/concern/theses/cv43p316w">thesis</a> using graph theory to analyze brain networks and was a co-author on a <a href="https://journal.r-project.org/archive/2021/RJ-2021-033/RJ-2021-033.pdf">paper</a> benchmarking TDA calculations.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Papers() {
-              var popup = document.getElementById("Paperspop");
-              popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Workshops()" id="Workshops">
-            Workshops
-            <span class="popuptext" id="Workshopspop">I have ran two workshops on using software to analyze data with topological data analysis, at <a href="https://wocomtoqc.github.io">WoComToQC 2023</a> and at <a href="https://www.ihcisociety.org/ihci-2023">IHCI 2023</a></span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Workshops() {
-              var popup = document.getElementById("Workshopspop");
-              popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="AL()" id="AL">
-            Air liquide
-            <span class="popuptext" id="ALpop">In the summer of 2022 I worked as a data scientist intern at <a href="https://www.airliquide.com/group/canada">Air Liquide</a>, using machine learning in python to analyze product demand time series data.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function AL() {
-            var popup = document.getElementById("ALpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Kinduct()" id="Kinduct">
-            Kinduct
-            <span class="popuptext" id="Kinductpop">In the summers of 2017 and 2018 I worked as a junior data scientist at <a href="https://www.movella.com/products/kinduct">Kinduct Technologies</a>, using machine learning and statistics in R to analyze player load and performance data.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function Kinduct() {
-            var popup = document.getElementById("Kinductpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="RCS()" id="RCS">
-            RCS
-            <span class="popuptext" id="RCSpop">In the summer of 2017 I worked as a data scientist intern at <a href="https://www.realitychecksystems.com">Reality Check Systems</a>, analyzing soccer player performance data in C++.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function RCS() {
-            var popup = document.getElementById("RCSpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="LTS()" id="LTS">
-            Let's talk science
-            <span class="popuptext" id="LTSpop">In 2020 and 2021 I ran educational programming as a part of <a href="https://letstalkscience.ca">Let's Talk Science</a> for youth across Canada.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function LTS() {
-            var popup = document.getElementById("LTSpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Shine()" id="Shine">
-            Shine
-            <span class="popuptext" id="Shinepop">In 2019 I volunteered to tutor math to underpriveleged youth at <a href="https://www.shinehalifax.com/about#:~:text=We%20provide%20free%20math%20and,professionals%20in%20Halifax%20and%20Dartmouth.">Shine</a>.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function Shine() {
-            var popup = document.getElementById("Shinepop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="AI()" id="AI">
-            Deep learning
-            <span class="popuptext" id="AIpop">In order to turn deep learning from a hobbie into a career I have completed the deep learning specialization on coursera, as well as three additional courses on generative AI (LLM focus) and on building and training custom models using tensorflow.<img src="images/DL_cert.png" alt="DL certificate" width="150" height="150">
-                <img src="images/gen_cert.png" alt="DL certificate" width="150" height="150">
-                <img src="images/custom_tf.png" alt="DL certificate" width="150" height="150">
-                <img src="images/training_tf.png" alt="DL certificate" width="150" height="150"></span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function AI() {
-            var popup = document.getElementById("AIpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Interpretation()" id="Interpretation">
-            Interpretation
-            <span class="popuptext" id="Interpretationpop">I have enjoyed reading about tools for interpreting and explaining machine learning models, including <a href="https://www.google.ca/books/edition/Interpretable_Machine_Learning_with_Pyth/iIwmEAAAQBAJ?hl=en&gbpv=0">this book</a> on general tools and <a href="https://www.mdpi.com/1999-4893/13/6/150">these</a> <a href="https://www.nature.com/articles/s42256-023-00749-8#:~:text=We%20use%20topological%20data%20analysis,such%20as%20tSNE%20and%20UMAP.">papers</a> (two separate links) which use TDA.</span>
-        </div>
-
-        <script>
-            // When the user clicks on div, open the popup
-            function Interpretation() {
-            var popup = document.getElementById("Interpretationpop");
-            popup.classList.toggle("show");
-            }
-        </script>
-
-    </div>
-
-    <div class="layer endproducts">
-
-        <div class="circle popup" onclick="Software()" id="Software">
-            Software
-            <span class="popuptext" id="Softwarepop">As a part of my PhD I developed an R package called <a href="https://cran.r-project.org/web/packages/TDApplied/index.html">TDApplied</a>, which is the first data science software for analyzing persistence diagrams with machine learning and inference.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Software() {
-              var popup = document.getElementById("Softwarepop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Neuro()" id="Neuro">
-            tRSA
-            <span class="popuptext" id="Neuropop">The main contribution of my PhD thesis is a tool we call "topological representational similarity analysis" (tRSA for short), which applies TDA in a novel framework to find previously unseen features of brain function and to use these features to compare brains, species, models, etc.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Neuro() {
-              var popup = document.getElementById("Neuropop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Demand()" id="Demand">
-            Demand forecasting
-            <span class="popuptext" id="Demandpop">Using feature engineering I was able to improve the accuracy of the companies demand forecasting model by 5%.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Demand() {
-              var popup = document.getElementById("Demandpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Fatigue()" id="Fatigue">
-            Fatigue metric
-            <span class="popuptext" id="Fatiguepop">Using mathematical tricks and by creating a complex simulation system for real-time positional data I created a metric to quantify real-time player fatigue which correlates with player performance. This metric has been adopted in the NHL and NCAA.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Fatigue() {
-              var popup = document.getElementById("Fatiguepop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="PR()" id="PR">
-            Soccer statistic
-            <span class="popuptext" id="PRpop">I implemented a novel metric for assessing soccer player performance using Google's PageRank algorithm, based on some <a href="https://arxiv.org/abs/1704.00583">personal research</a> I carried out.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function PR() {
-              var popup = document.getElementById("PRpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Webinars()" id="Webinars">
-            Webinars
-            <span class="popuptext" id="Webinarspop">By combining my passions for math and sports I was able to host two seminars for students across Canada to learn about math through sports analogies. Here is the flyer for the second webinar in Feb 2021:<img src="images/LTS.jpg" alt="Webinar flyer" width="150" height="150"></span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Webinars() {
-              var popup = document.getElementById("Webinarspop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Dexcom()" id="Dexcom">
-            Dexcom detection
-            <span class="popuptext" id="Dexcompop">Someone dear in my life has Type 1 Diabetes, and uses a <a href="https://www.dexcom.com/en-ca">Dexcom</a> to monitor her blood sugar. The machine alerts her whether her blood sugar is high, low or ugently low, each with its own distinct alert sound. In order to assess the potential use of a phone app which can "listen" and detect dexcom predictions, for added help in diabetes management, I have been fitting deep learning models of a personally curated dexcom alert dataset for trigger detection, and have been interpreting the models with traditional and TDA methods. Check out the current progress at <a href="https://github.com/shaelebrown/dexcom_alert_detection">my GitHub</a>.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Dexcom() {
-              var popup = document.getElementById("Dexcompop");
-              popup.classList.toggle("show");
-            }
-        </script>
-
-    </div>
-
-    <div class="layer skills">
-
-        <div class="circle popup" onclick="Dev()" id="Dev">
-            Software Dev
-            <span class="popuptext" id="Devpop">For my software package I had to become adept in managing dependencies, writing clean and efficient code with an easy-to-use API, providing clear and simple documentation, version control with git and using unit testing to verify function. Through this project I gained a lot of knowledge specifically in kernel-based machine learning and parallelization.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Dev() {
-              var popup = document.getElementById("Devpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="TDA()" id="TDA">
-            TDA
-            <span class="popuptext" id="TDApop">Between my PhD projects and personal projects I have gained a deep expertise in the field of TDA. This includes algorithms like persistent homology and mapper, and their uses in data visualization, summarization, feature engineering, modelling and interpretation. I have also gained expertise analyzing graphs with graph metrics.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function TDA() {
-              var popup = document.getElementById("TDApop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Communication()" id="Communication">
-            Communication
-            <span class="popuptext" id="Communicationpop">My PhD advisor, Reza Farivar, insisted that we learn how to form and argue against arguments as a part of our program, and argument mapping was a key step before paper and dissertation writing. I also learned how to communicate complex ideas in plain language, both topics in neuroscience and data science.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Communication() {
-              var popup = document.getElementById("Communicationpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="ML()" id="ML">
-            Machine learning
-            <span class="popuptext" id="MLpop">As a part of my software package I had to implement custom and wrapper machine learning methods for model fitting, cross validation and inference, with sensible default parameter values.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function ML() {
-              var popup = document.getElementById("MLpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="R()" id="R">
-            R
-            <span class="popuptext" id="Rpop">I have written complex and interdependent functions in R using parallelization, error handling and scoping, and which have interfaced with python and C code.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function R() {
-              var popup = document.getElementById("Rpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="Python()" id="Python">
-            Python
-            <span class="popuptext" id="Pythonpop">I have used the modules \<code>matplotlib</code> for visualizing time series data, \<code>numpy</code> and \<code>pandas</code> for feature engineering, <code>pydub</code> for file IO and manipulations of audio data, and <code>lime</code> (among others) for interpreting machine learning models. Whenever possible I have used list comprehension and vectorization to write efficient code.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Python() {
-              var popup = document.getElementById("Pythonpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="TF()" id="TF">
-            Tensorflow
-            <span class="popuptext" id="TFpop">In my dexcom alert project I have fit dozens of tensorflow models with varying architectures, as well as creating several models with custom loss functions and training loops.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function TF() {
-              var popup = document.getElementById("TFpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
-        <br>
-        <br>
-
-        <div class="circle popup" onclick="DL()" id="DL">
-            Deep learning
-            <span class="popuptext" id="DLpop">I have fit convolutional and recurrent neural networks, each with varied architectures and parameters, using different regularization techniques like dropout and L2, and with different training settings like weight decay, in my dexcom project. I plan on using transformer architectures in future projects (I have experience using these architectures in my courses).</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function DL() {
-              var popup = document.getElementById("DLpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-
-    </div>
-
-    <div class="layer goal">
-
-        <div class="circle popup" onclick="Goal()" id="Goal">
-            Goal
-            <span class="popuptext" id="Goalpop">I want to work at an innovative company solving important problems with deep learning, driving value using my expertise in TDA and tensorflow to visualize, interpret and improve deep learning models.</span>
-        </div>
-    
-        <script>
-            // When the user clicks on div, open the popup
-            function Goal() {
-              var popup = document.getElementById("Goalpop");
-              popup.classList.toggle("show");
-            }
-        </script>
-
-    </div>
-
-    <svg width="300" height="100">
+        <svg width=700 height=700>
 
         <defs>
             <marker id="arrow" markerWidth="13" markerHeight="13" refx="2" refy="6" orient="auto">
@@ -566,21 +36,555 @@
                      marker-end: url(#arrow);"
         />
     
-    </svg>
+        </svg>
 
-    <script>
-        var leftobj = document.getElementById("PhD");
-        var rightobj = document.getElementById("Papers");
-        var leftcoords = leftobj.getBoundingClientRect();
-        var rightcoords = rightobj.getBoundingClientRect();
-        var startx = leftcoords.right;
-        var endx = rightcoords.left;
-        var starty = (leftcoords.top + leftcoords.bottom)/2;
-        var endy = (rightcoords.top + rightcoords.bottom)/2;
-        var linepath = `M${startx},${starty} L${endx},${endy}`;
-        var arr = document.getElementById("arr1");
-        arr.setAttribute('d', linepath)
-    </script>
+        <div>
+            <code class="inputspan">Inputs</code>
+            <code class="backgroundspan">Layer 1: background</code>
+            <code class="expspan">Layer 2: experience</code>
+            <code class="prodspan">Layer 3: end products</code>
+            <code class="skillspan">Layer 4: skills</code>
+            <code class="outputspan">Outputs: goal</code>
+        </div>
+
+        <div class="inputs">
+            <div class="input" id="inputspan1"><code>Input 1: education</code></div>
+            <br>
+            <br>
+            <br>
+            <div class="input"><code>Input 2: personal</code></div>
+        </div>
+
+        <div class="layer background">
+
+            <div class="circle popup" onclick="PhD()" id="PhD">
+                PhD
+                <span class="popuptext" id="PhDpop">I started my PhD in Quantitative Life Sciences at McGill in 2019.
+                    As a part of the <a href="http://www.farivarlab.com/">Farivar lab</a> I used tools from topological data analysis to
+                improve methods for analyzing neural representations of stimuli.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function PhD() {
+                var popup = document.getElementById("PhDpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="MSc()" id="MSc">
+                MSc
+                <span class="popuptext" id="MScpop">I completed my MSc in mathematics at McGill University between 2017-19 in the field of mathematical logic. My <a href="https://escholarship.mcgill.ca/concern/theses/q524jr06s">thesis</a> showed that a certain reasoning system can always decide whether any statement is true or false.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function MSc() {
+                var popup = document.getElementById("MScpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="BSc()" id="BSc">
+                BSc
+                <span class="popuptext" id="BScpop">I completed my BSc with a joint honors in mathematics and computer science and a minor in French at Dalhousie University between 2013-17. In my final year I won the university medal for mathematics.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function BSc() {
+                var popup = document.getElementById("BScpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+            
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Volunteering()" id="Volunteering">
+                Volunteering
+                <span class="popuptext" id="Volunteeringpop">I have been giving back to my community ever since my early teenage years. For example, I co-ran <a href="https://dalgazette.com/news/holocaust-education-week-begins-on-sunday/">holocaust education week</a> 2014 in Halifax. I also organized two collection drives for <a href="https://phoenixyouth.ca">Phoenix Youth</a>, providing clothing and holiday presents to at risk youth in Halifax. Most of my volunteering, however, has focused on tutoring, which you can read about in later nodes.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function Volunteering() {
+                var popup = document.getElementById("Volunteeringpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Hobbies()" id="Hobbies">
+                Hobbies
+                <span class="popuptext" id="Hobbiespop">In my free time I enjoy learning languages (French, Arabic, Hebrew and Spanish), playing soccer, running and learning about interesting math and its applications in real life/data science.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function Hobbies() {
+                var popup = document.getElementById("Hobbiespop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+        </div>
+
+        <div class="layer experience">
+
+            <div class="circle popup" onclick="Papers()" id="Papers">
+                Papers
+                <span class="popuptext" id="Paperspop">I currently have two papers in preparation - a neuroscience paper which applies topological data analysis (TDA) to improve the analysis of neural representations, and a software paper for an R package I wrote for topological data analysis. I have also contributed to this <a href="https://escholarship.mcgill.ca/concern/theses/cv43p316w">thesis</a> using graph theory to analyze brain networks and was a co-author on a <a href="https://journal.r-project.org/archive/2021/RJ-2021-033/RJ-2021-033.pdf">paper</a> benchmarking TDA calculations.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Papers() {
+                var popup = document.getElementById("Paperspop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Workshops()" id="Workshops">
+                Workshops
+                <span class="popuptext" id="Workshopspop">I have ran two workshops on using software to analyze data with topological data analysis, at <a href="https://wocomtoqc.github.io">WoComToQC 2023</a> and at <a href="https://www.ihcisociety.org/ihci-2023">IHCI 2023</a></span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Workshops() {
+                var popup = document.getElementById("Workshopspop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="AL()" id="AL">
+                Air liquide
+                <span class="popuptext" id="ALpop">In the summer of 2022 I worked as a data scientist intern at <a href="https://www.airliquide.com/group/canada">Air Liquide</a>, using machine learning in python to analyze product demand time series data.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function AL() {
+                var popup = document.getElementById("ALpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Kinduct()" id="Kinduct">
+                Kinduct
+                <span class="popuptext" id="Kinductpop">In the summers of 2017 and 2018 I worked as a junior data scientist at <a href="https://www.movella.com/products/kinduct">Kinduct Technologies</a>, using machine learning and statistics in R to analyze player load and performance data.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function Kinduct() {
+                var popup = document.getElementById("Kinductpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="RCS()" id="RCS">
+                RCS
+                <span class="popuptext" id="RCSpop">In the summer of 2017 I worked as a data scientist intern at <a href="https://www.realitychecksystems.com">Reality Check Systems</a>, analyzing soccer player performance data in C++.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function RCS() {
+                var popup = document.getElementById("RCSpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="LTS()" id="LTS">
+                Let's talk science
+                <span class="popuptext" id="LTSpop">In 2020 and 2021 I ran educational programming as a part of <a href="https://letstalkscience.ca">Let's Talk Science</a> for youth across Canada.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function LTS() {
+                var popup = document.getElementById("LTSpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Shine()" id="Shine">
+                Shine
+                <span class="popuptext" id="Shinepop">In 2019 I volunteered to tutor math to underpriveleged youth at <a href="https://www.shinehalifax.com/about#:~:text=We%20provide%20free%20math%20and,professionals%20in%20Halifax%20and%20Dartmouth.">Shine</a>.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function Shine() {
+                var popup = document.getElementById("Shinepop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="AI()" id="AI">
+                Deep learning
+                <span class="popuptext" id="AIpop">In order to turn deep learning from a hobbie into a career I have completed the deep learning specialization on coursera, as well as three additional courses on generative AI (LLM focus) and on building and training custom models using tensorflow.<img src="images/DL_cert.png" alt="DL certificate" width="150" height="150">
+                    <img src="images/gen_cert.png" alt="DL certificate" width="150" height="150">
+                    <img src="images/custom_tf.png" alt="DL certificate" width="150" height="150">
+                    <img src="images/training_tf.png" alt="DL certificate" width="150" height="150"></span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function AI() {
+                var popup = document.getElementById("AIpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Interpretation()" id="Interpretation">
+                Interpretation
+                <span class="popuptext" id="Interpretationpop">I have enjoyed reading about tools for interpreting and explaining machine learning models, including <a href="https://www.google.ca/books/edition/Interpretable_Machine_Learning_with_Pyth/iIwmEAAAQBAJ?hl=en&gbpv=0">this book</a> on general tools and <a href="https://www.mdpi.com/1999-4893/13/6/150">these</a> <a href="https://www.nature.com/articles/s42256-023-00749-8#:~:text=We%20use%20topological%20data%20analysis,such%20as%20tSNE%20and%20UMAP.">papers</a> (two separate links) which use TDA.</span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function Interpretation() {
+                var popup = document.getElementById("Interpretationpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+        </div>
+
+        <div class="layer endproducts">
+
+            <div class="circle popup" onclick="Software()" id="Software">
+                Software
+                <span class="popuptext" id="Softwarepop">As a part of my PhD I developed an R package called <a href="https://cran.r-project.org/web/packages/TDApplied/index.html">TDApplied</a>, which is the first data science software for analyzing persistence diagrams with machine learning and inference.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Software() {
+                var popup = document.getElementById("Softwarepop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Neuro()" id="Neuro">
+                tRSA
+                <span class="popuptext" id="Neuropop">The main contribution of my PhD thesis is a tool we call "topological representational similarity analysis" (tRSA for short), which applies TDA in a novel framework to find previously unseen features of brain function and to use these features to compare brains, species, models, etc.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Neuro() {
+                var popup = document.getElementById("Neuropop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Demand()" id="Demand">
+                Demand forecasting
+                <span class="popuptext" id="Demandpop">Using feature engineering I was able to improve the accuracy of the companies demand forecasting model by 5%.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Demand() {
+                var popup = document.getElementById("Demandpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Fatigue()" id="Fatigue">
+                Fatigue metric
+                <span class="popuptext" id="Fatiguepop">Using mathematical tricks and by creating a complex simulation system for real-time positional data I created a metric to quantify real-time player fatigue which correlates with player performance. This metric has been adopted in the NHL and NCAA.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Fatigue() {
+                var popup = document.getElementById("Fatiguepop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="PR()" id="PR">
+                Soccer statistic
+                <span class="popuptext" id="PRpop">I implemented a novel metric for assessing soccer player performance using Google's PageRank algorithm, based on some <a href="https://arxiv.org/abs/1704.00583">personal research</a> I carried out.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function PR() {
+                var popup = document.getElementById("PRpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Webinars()" id="Webinars">
+                Webinars
+                <span class="popuptext" id="Webinarspop">By combining my passions for math and sports I was able to host two seminars for students across Canada to learn about math through sports analogies. Here is the flyer for the second webinar in Feb 2021:<img src="images/LTS.jpg" alt="Webinar flyer" width="150" height="150"></span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Webinars() {
+                var popup = document.getElementById("Webinarspop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Dexcom()" id="Dexcom">
+                Dexcom detection
+                <span class="popuptext" id="Dexcompop">Someone dear in my life has Type 1 Diabetes, and uses a <a href="https://www.dexcom.com/en-ca">Dexcom</a> to monitor her blood sugar. The machine alerts her whether her blood sugar is high, low or ugently low, each with its own distinct alert sound. In order to assess the potential use of a phone app which can "listen" and detect dexcom predictions, for added help in diabetes management, I have been fitting deep learning models of a personally curated dexcom alert dataset for trigger detection, and have been interpreting the models with traditional and TDA methods. Check out the current progress at <a href="https://github.com/shaelebrown/dexcom_alert_detection">my GitHub</a>.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Dexcom() {
+                var popup = document.getElementById("Dexcompop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+        </div>
+
+        <div class="layer skills">
+
+            <div class="circle popup" onclick="Dev()" id="Dev">
+                Software Dev
+                <span class="popuptext" id="Devpop">For my software package I had to become adept in managing dependencies, writing clean and efficient code with an easy-to-use API, providing clear and simple documentation, version control with git and using unit testing to verify function. Through this project I gained a lot of knowledge specifically in kernel-based machine learning and parallelization.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Dev() {
+                var popup = document.getElementById("Devpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="TDA()" id="TDA">
+                TDA
+                <span class="popuptext" id="TDApop">Between my PhD projects and personal projects I have gained a deep expertise in the field of TDA. This includes algorithms like persistent homology and mapper, and their uses in data visualization, summarization, feature engineering, modelling and interpretation. I have also gained expertise analyzing graphs with graph metrics.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function TDA() {
+                var popup = document.getElementById("TDApop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Communication()" id="Communication">
+                Communication
+                <span class="popuptext" id="Communicationpop">My PhD advisor, Reza Farivar, insisted that we learn how to form and argue against arguments as a part of our program, and argument mapping was a key step before paper and dissertation writing. I also learned how to communicate complex ideas in plain language, both topics in neuroscience and data science.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Communication() {
+                var popup = document.getElementById("Communicationpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="ML()" id="ML">
+                Machine learning
+                <span class="popuptext" id="MLpop">As a part of my software package I had to implement custom and wrapper machine learning methods for model fitting, cross validation and inference, with sensible default parameter values.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function ML() {
+                var popup = document.getElementById("MLpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="R()" id="R">
+                R
+                <span class="popuptext" id="Rpop">I have written complex and interdependent functions in R using parallelization, error handling and scoping, and which have interfaced with python and C code.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function R() {
+                var popup = document.getElementById("Rpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="Python()" id="Python">
+                Python
+                <span class="popuptext" id="Pythonpop">I have used the modules \<code>matplotlib</code> for visualizing time series data, \<code>numpy</code> and \<code>pandas</code> for feature engineering, <code>pydub</code> for file IO and manipulations of audio data, and <code>lime</code> (among others) for interpreting machine learning models. Whenever possible I have used list comprehension and vectorization to write efficient code.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Python() {
+                var popup = document.getElementById("Pythonpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="TF()" id="TF">
+                Tensorflow
+                <span class="popuptext" id="TFpop">In my dexcom alert project I have fit dozens of tensorflow models with varying architectures, as well as creating several models with custom loss functions and training loops.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function TF() {
+                var popup = document.getElementById("TFpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+        
+            <br>
+            <br>
+            <br>
+
+            <div class="circle popup" onclick="DL()" id="DL">
+                Deep learning
+                <span class="popuptext" id="DLpop">I have fit convolutional and recurrent neural networks, each with varied architectures and parameters, using different regularization techniques like dropout and L2, and with different training settings like weight decay, in my dexcom project. I plan on using transformer architectures in future projects (I have experience using these architectures in my courses).</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function DL() {
+                var popup = document.getElementById("DLpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+        </div>
+
+        <div class="layer goal">
+
+            <div class="circle popup" onclick="Goal()" id="Goal">
+                Goal
+                <span class="popuptext" id="Goalpop">I want to work at an innovative company solving important problems with deep learning, driving value using my expertise in TDA and tensorflow to visualize, interpret and improve deep learning models.</span>
+            </div>
+        
+            <script>
+                // When the user clicks on div, open the popup
+                function Goal() {
+                var popup = document.getElementById("Goalpop");
+                popup.classList.toggle("show");
+                }
+            </script>
+
+        </div>
+
+        <script>
+            let leftobj = document.getElementById("PhD");
+            let rightobj = document.getElementById("Papers");
+            let leftcoords = leftobj.getBoundingClientRect();
+            let rightcoords = rightobj.getBoundingClientRect();
+            let startx = leftcoords.right;
+            let endx = rightcoords.left;
+            let starty = (leftcoords.top + leftcoords.bottom)/2;
+            let endy = (rightcoords.top + rightcoords.bottom)/2;
+            let linepath = `M${startx},${starty} L${endx},${endy}`;
+            let arr = document.getElementById("arr1");
+            arr.setAttribute('d', linepath)
+        </script>
+
+    </div>
 
 </body>
 </html>
